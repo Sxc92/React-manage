@@ -37,6 +37,11 @@ const routes = [
             }
         ]
     },
+    // 通用匹配默认跳转， 后期可以改成404页面
+    {
+        path: '*',
+        element: <Navigate to="/page1" />
+    }
 ]
 
 export default routes
